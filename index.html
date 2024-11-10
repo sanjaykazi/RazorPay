@@ -16,6 +16,17 @@
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
+        .companiesList{
+            animation: 10s infinite linear moveCompany ; 
+        }
+        @keyframes moveCompany {
+            0%{
+                top:0;
+            }
+            100%{
+                top:-100%;
+            }
+        }
     </style>
 </head>
 
@@ -914,7 +925,34 @@
                 </div>
             </div>
         </section>
-        
+        <!-- join razorpay section  -->
+        <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+            <div class="relative mx-auto w-11/12 max-w-[1080px] flex">
+                <!-- left-part  -->
+                <div class="flex flex-col justify-center max-w-[calc(100%-500px)] ">
+                    <h3
+                    class="font-mullish font-bold text-2xl text-deepBlue">Join the 50,00,000+ businesses using Razorpay</h3>
+                    <div class="w-6 h-1 bg-greenLight mb-10 my-4"></div>
+                    <p
+                    class="font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tempore voluptatum modi aspernatur accusantium, quisquam quas 
+                        eveniet quod animi necessitatibus amet reiciendis tenetur minus. 
+                        Recusandae, alias deleniti. Consectetur, quos. Distinctio, laborum!</p>
+                    <p
+                    class="font-mullish mt-6 opacity-80">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, totam?</p>
+                </div>
+                <!-- right-part  -->
+                 <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                    <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
+                    class="absolute w-full h-[150px] top-0 z-50"></div>
+                    <img src="./images/comanies.png" alt="" width="500px"
+                    class="absolute h-auto object-cover companiesList">
+                    <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
+                    class="absolute w-full h-[150px] bottom-0"></div>
+                 </div>
+            </div>
+        </section>
+        <!-- Testimonial section  -->
     </div>
 
 
