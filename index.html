@@ -22,6 +22,10 @@
             animation: 10s infinite linear moveCompany;
         }
 
+        .ctasection {
+            background-size: 100% 100%;
+        }
+
         @keyframes moveCompany {
             0% {
                 top: 0;
@@ -112,7 +116,7 @@
         </nav>
         <!-- Hero section -->
         <section class="bg-deepBlue relative ">
-            <div class="w-10/12 flex max-w-[1080px] justify-between items-center mx-auto ">
+            <div class="w-10/12 flex flex-col lg:flex-row max-w-[1080px] justify-between items-center mx-auto ">
                 <!-- left part -->
                 <div class="space-y-8">
                     <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">
@@ -959,41 +963,42 @@
         <section class="relative ">
             <div class="w-11/12 max-w[1300px] mx-auto relative py-20">
                 <img src="./images/feature-section1-dottedrows.png" alt=""
-                class="absolute w-[200px] top-[8rem] left-[2rem] -z-10" >
+                    class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
                 <h2 class="font-mullish font-bold text-2xl text-deepBlue text-center">An Experience <br>
                     People Love to Talk About
                 </h2>
                 <div class="w-6 h-1 mx-auto bg-greenLight my-4"></div>
                 <!-- left button -->
-                <button class="absolute rounded-full w-[100px] h-[100px] bg-[#f4f8ff] left-0 top-1/2 flex justify-center items-center">
-                    <div class="w-[65%] h-[65%] flex justify-center items-center bg-[#f4f8ff] mix-blend-multiply rounded-full">
+                <button
+                    class="absolute rounded-full w-[100px] h-[100px] bg-[#f4f8ff] left-0 top-1/2 flex justify-center items-center">
+                    <div
+                        class="w-[65%] h-[65%] flex justify-center items-center bg-[#f4f8ff] mix-blend-multiply rounded-full">
                         <i data-feather="chevron-right"
-                        class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400 rotate-180">  
+                            class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400 rotate-180">
                         </i>
                     </div>
                 </button>
                 <!-- right button -->
-                <button class="absolute rounded-full w-[100px] h-[100px] bg-[#f4f8ff] right-0 top-1/2 flex justify-center items-center">
-                    <div class="w-[65%] h-[65%] flex justify-center items-center bg-[#f4f8ff] mix-blend-multiply rounded-full">
-                        <i data-feather="chevron-right"
-                        class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">  
+                <button
+                    class="absolute rounded-full w-[100px] h-[100px] bg-[#f4f8ff] right-0 top-1/2 flex justify-center items-center">
+                    <div
+                        class="w-[65%] h-[65%] flex justify-center items-center bg-[#f4f8ff] mix-blend-multiply rounded-full">
+                        <i data-feather="chevron-right" class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
                         </i>
                     </div>
                 </button>
                 <!-- main content -->
                 <div class="flex max-w-[960px] mx-auto my-16 items-center space-x-[10rem]">
                     <!-- left image  -->
-                    <img src="./images/testimonial.jpg" alt="" height="320px" width="320px"
-                    class="rounded-xl" loading="lazy">
+                    <img src="./images/testimonial.jpg" alt="" height="320px" width="320px" class="rounded-xl"
+                        loading="lazy">
                     <!-- right part  -->
                     <div class="max-w-[400px] flex flex-col gap-2">
-                        <img src="./images/quotes.svg" alt="" width="35px" height="40px"
-                        class="-mb-2">
-                        <p
-                        class="font-mullish text-3xl font-extralight opacity-40">Readymade Closed Wallet Solution For Quick Refunds</p>
+                        <img src="./images/quotes.svg" alt="" width="35px" height="40px" class="-mb-2">
+                        <p class="font-mullish text-3xl font-extralight opacity-40">Readymade Closed Wallet Solution For
+                            Quick Refunds</p>
                         <a href="#" class="text-grayText italic underline">Learn More</a>
-                        <h3 
-                        class="font-mullish font-extrabold text-2xl">Lorem ipsum</h3>
+                        <h3 class="font-mullish font-extrabold text-2xl">Lorem ipsum</h3>
                         <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
                         <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px">
                     </div>
@@ -1007,7 +1012,49 @@
                     <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
                     <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
                 </div>
-                
+
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat relative bg-cover ctasection min-h-[510px]">
+            <!-- main content -->
+            <div class="w-11/12 max-w-[1080px] relative flex items-center justify-between space-x-20 mx-auto pt-16">
+                <!-- left part  -->
+                <div class="flex flex-col mt-10 gap-3 max-w-[600px]">
+                    <h2 class="font-mullish font-bold text-2xl text-white">Supercharge your business with Razorpay</h2>
+                    <div class="w-6 h-1 bg-greenLight "></div>
+                    <p class="font-mullish text-white">Sign up now to experinece the future of payments andn offer
+                        <br>your customers the best checkout
+                        experience.</p>
+                    <ul class="flex flex-row flex-wrap gap-y-3 gap-x-11 text-white">
+                        <li class="font-mullish flex">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>Quick Onboarding</span>
+                        </li>
+                        <li class="flex font-mullish">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>Access to entire product suite</span>
+                        </li>
+                        <li class="flex font-mullish">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>API access</span>
+                        </li>
+                        <li class="flex font-mullish">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <button class="font-mullish bg-white font-bold text-sm text-lightBlue300 border
+                    flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200 py-3 px-4 place-self-start">Sign Up
+                        <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+                            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- right side image  -->
+                <img src="./images/ctaImg.svg" alt="" width="240px" height="282px" class="mt-16 pt-2">
             </div>
         </section>
     </div>
