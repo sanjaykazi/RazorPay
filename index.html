@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link rel="stylesheet" href="main.css">
     <style>
         .corefeaturesection {
@@ -16,15 +17,18 @@
             padding-top: 12rem;
             padding-bottom: 12rem;
         }
-        .companiesList{
-            animation: 10s infinite linear moveCompany ; 
+
+        .companiesList {
+            animation: 10s infinite linear moveCompany;
         }
+
         @keyframes moveCompany {
-            0%{
-                top:0;
+            0% {
+                top: 0;
             }
-            100%{
-                top:-100%;
+
+            100% {
+                top: -100%;
             }
         }
     </style>
@@ -930,37 +934,87 @@
             <div class="relative mx-auto w-11/12 max-w-[1080px] flex">
                 <!-- left-part  -->
                 <div class="flex flex-col justify-center max-w-[calc(100%-500px)] ">
-                    <h3
-                    class="font-mullish font-bold text-2xl text-deepBlue">Join the 50,00,000+ businesses using Razorpay</h3>
+                    <h3 class="font-mullish font-bold text-2xl text-deepBlue">Join the 50,00,000+ businesses using
+                        Razorpay</h3>
                     <div class="w-6 h-1 bg-greenLight mb-10 my-4"></div>
-                    <p
-                    class="font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Tempore voluptatum modi aspernatur accusantium, quisquam quas 
-                        eveniet quod animi necessitatibus amet reiciendis tenetur minus. 
+                    <p class="font-mullish opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempore voluptatum modi aspernatur accusantium, quisquam quas
+                        eveniet quod animi necessitatibus amet reiciendis tenetur minus.
                         Recusandae, alias deleniti. Consectetur, quos. Distinctio, laborum!</p>
-                    <p
-                    class="font-mullish mt-6 opacity-80">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, totam?</p>
+                    <p class="font-mullish mt-6 opacity-80">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Distinctio, totam?</p>
                 </div>
                 <!-- right-part  -->
-                 <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                <div class="h-[500px] w-[500px] relative overflow-y-hidden">
                     <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
-                    class="absolute w-full h-[150px] top-0 z-50"></div>
+                        class="absolute w-full h-[150px] top-0 z-50"></div>
                     <img src="./images/comanies.png" alt="" width="500px"
-                    class="absolute h-auto object-cover companiesList">
+                        class="absolute h-auto object-cover companiesList">
                     <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
-                    class="absolute w-full h-[150px] bottom-0"></div>
-                 </div>
+                        class="absolute w-full h-[150px] bottom-0"></div>
+                </div>
             </div>
         </section>
         <!-- Testimonial section  -->
-         <section>
-            <div>
+        <section class="relative ">
+            <div class="w-11/12 max-w[1300px] mx-auto relative py-20">
+                <img src="./images/feature-section1-dottedrows.png" alt=""
+                class="absolute w-[200px] top-[8rem] left-[2rem] -z-10" >
+                <h2 class="font-mullish font-bold text-2xl text-deepBlue text-center">An Experience <br>
+                    People Love to Talk About
+                </h2>
+                <div class="w-6 h-1 mx-auto bg-greenLight my-4"></div>
+                <!-- left button -->
+                <button class="absolute rounded-full w-[100px] h-[100px] bg-[#f4f8ff] left-0 top-1/2 flex justify-center items-center">
+                    <div class="w-[65%] h-[65%] flex justify-center items-center bg-[#f4f8ff] mix-blend-multiply rounded-full">
+                        <i data-feather="chevron-right"
+                        class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400 rotate-180">  
+                        </i>
+                    </div>
+                </button>
+                <!-- right button -->
+                <button class="absolute rounded-full w-[100px] h-[100px] bg-[#f4f8ff] right-0 top-1/2 flex justify-center items-center">
+                    <div class="w-[65%] h-[65%] flex justify-center items-center bg-[#f4f8ff] mix-blend-multiply rounded-full">
+                        <i data-feather="chevron-right"
+                        class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">  
+                        </i>
+                    </div>
+                </button>
+                <!-- main content -->
+                <div class="flex max-w-[960px] mx-auto my-16 items-center space-x-[10rem]">
+                    <!-- left image  -->
+                    <img src="./images/testimonial.jpg" alt="" height="320px" width="320px"
+                    class="rounded-xl" loading="lazy">
+                    <!-- right part  -->
+                    <div class="max-w-[400px] flex flex-col gap-2">
+                        <img src="./images/quotes.svg" alt="" width="35px" height="40px"
+                        class="-mb-2">
+                        <p
+                        class="font-mullish text-3xl font-extralight opacity-40">Readymade Closed Wallet Solution For Quick Refunds</p>
+                        <a href="#" class="text-grayText italic underline">Learn More</a>
+                        <h3 
+                        class="font-mullish font-extrabold text-2xl">Lorem ipsum</h3>
+                        <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
+                        <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px">
+                    </div>
+                </div>
+                <!-- 6 dot div  -->
+                <div class="flex mx-auto space-x-2 w-full justify-center">
+                    <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
+                    <div class="h-[10px] w-[10px] rounded-full bg-blue-500 "></div>
+                    <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
+                    <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
+                    <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
+                    <div class="h-[10px] w-[10px] rounded-full bg-gray-300 "></div>
+                </div>
                 
             </div>
-         </section>
+        </section>
     </div>
 
-
+    <script>
+        feather.replace();  // Initializes Feather icons
+    </script>
 </body>
 
 </html>
