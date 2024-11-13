@@ -1,0 +1,33 @@
+# Node.js specific files and folders
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git
+.gitignore
+
+# Docker files
+.dockerignore
+Dockerfile*
+
+# Build output folders
+dist
+build
+out
+
+# IDE/editor-specific files
+.vscode
+.idea
+*.swp
+
+# Environment and configuration files (if sensitive)
+.env
